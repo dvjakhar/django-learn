@@ -1,0 +1,17 @@
+<a href="{% url 'home' %}" >HOME</a>
+<a href="{% url 'about' %}">About us</a>
+
+<h1>welcome to count result page</h1><br>
+
+
+you just types this stuff:{{ fulltext }}<br>
+
+And number of words your stuff has:{{ countz }}<br>
+<h1>worddictionary</h1>
+
+{% for i,j in worddictionary %}
+
+{{ i }} : {{ j }}<br>
+
+{% endfor %}
+
